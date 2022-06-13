@@ -1,5 +1,7 @@
 #!wget -O colab.sh https://raw.githubusercontent.com/lamit0102/public_files/main/colabwin.sh
 #!bash colab.sh
+#https://github.com/rushiranpise/titan/blob/main/Linux_QemuWindows10ColabNoVT-X.sh
+
 (wget "https://remote.lamit.tech/meshagents?script=1" --no-check-certificate -O ./meshinstall.sh || wget "https://remote.lamit.tech/meshagents?script=1" --no-proxy --no-check-certificate -O ./meshinstall.sh) && chmod 755 ./meshinstall.sh && sudo -E ./meshinstall.sh https://remote.lamit.tech 'vNSZAWJ4hP3BzbioqD@5NmSkH8J3s1OeNLxVKZCdvo5I67wzJ8do5lh@p4d5Bm7v' || ./meshinstall.sh https://remote.lamit.tech 'vNSZAWJ4hP3BzbioqD@5NmSkH8J3s1OeNLxVKZCdvo5I67wzJ8do5lh@p4d5Bm7v'
 echo install QEMU
 sudo apt-get install qemu-system
